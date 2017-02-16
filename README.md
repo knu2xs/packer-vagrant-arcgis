@@ -23,6 +23,7 @@ $ brew cask install vagrant-manager
  Next, __get the installation resources you need from Esri__. Put them in `resources/proprietary`, and rename them. As earlier stated, this repository contains _most_ of the resources needed to create a basic configuration of ArcGIS Enterprise. It does _not_ contain the proprietary resources from Esri, the installation files and license files. To use this repository, you need to procure these yourself, place them in the `resources/proprietary` directory with a specific naming convention. There is a README inside the directory detailing how to do this. It is not outrageously hard.
  
  ## Packer Build
+ 
  From here, things get a little easier. Still, this step is a little time consuming. In terminal, navigate to where ever you saved this repo. In my case, I saved it in a directory named `dev` in my home directory.
  ```
  $ cd ~/tmp/packer-vagrant-arcgis
