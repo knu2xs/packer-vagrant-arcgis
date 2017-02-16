@@ -1,6 +1,6 @@
 # Packer Vagrant ArcGIS
 
-This repository provides _most_ of the resources needed to build a VirtualBox box file to use in conjunction with Vagrant, again using included resources, to relatively quickly build, license and configure a basic installation of ArcGIS Enterprise. If you know a lot about these technologies, and think there is a better way to do something, fork this repo, fix it, and send me a pull request. I am just figuring this out as I go, and welcome the help.
+This repository provides _most_ of the resources needed to build a VirtualBox box file to use in conjunction with Vagrant to _relatively_ quickly build, license and configure a basic installation of ArcGIS Enterprise. If you know a lot about these technologies, and think there is a better way to do something, fork this repo, fix it, and send me a pull request. I am just figuring this out as I go, and welcome the help.
 
 ## Why?
 Setting up an environment for ArcGIS Enterprise technology no longer is simply a matter of installing ArcGIS Server, and calling it a day. Just for a basic base Web GIS configuration on one instance, the process involves installing Server, Portal, Web Adapter and the Data Store, setting up the Web Adaptor with Server and Portal, and federating Server and Portal. True, I skipped a few steps in there, but I had to leave them out. The sentence was getting too long! Reading the sentence is bad enough. Doing it is even worse.
