@@ -4,3 +4,4 @@ resources/proprietary/*.ecp
 packer_cache
 builds
 *-virtualbox
+.idea
