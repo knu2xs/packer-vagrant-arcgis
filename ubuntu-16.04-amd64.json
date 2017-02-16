@@ -85,9 +85,7 @@
         "resources/scripts/ubuntu/vagrant.sh",
         "resources/scripts/common/virtualbox.sh",
         "resources/scripts/ubuntu/vmware.sh",
-        "resources/scripts/common/parallels.sh",
-        "resources/scripts/ubuntu/cleanup.sh",
-        "resources/scripts/common/minimize.sh"
+        "resources/scripts/common/parallels.sh"
       ],
       "type": "shell"
     },
@@ -111,6 +109,20 @@
     },
     {
       "script": "resources/scripts/arcgis/web_adaptor_install.sh",
+      "type": "shell"
+    },
+    {
+      "environment_vars": [
+        "HOME_DIR=/home/vagrant",
+        "http_proxy={{user `http_proxy`}}",
+        "https_proxy={{user `https_proxy`}}",
+        "no_proxy={{user `no_proxy`}}"
+      ],
+      "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E sh -eux '{{.Path}}'",
+      "scripts": [
+        "resources/scripts/ubuntu/cleanup.sh",
+        "resources/scripts/common/minimize.sh"
+      ],
       "type": "shell"
     }
   ],

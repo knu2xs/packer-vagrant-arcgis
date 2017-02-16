@@ -2,5 +2,5 @@ resources/proprietary/ArcGIS*.tar.gz
 resources/proprietary/*.prvc
 resources/proprietary/*.ecp
 packer_cache
-build
+builds
 *-virtualbox
