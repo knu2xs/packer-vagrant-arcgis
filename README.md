@@ -26,7 +26,7 @@ $ brew cask install vagrant-manager
  
  From here, things get a little easier. Still, this step is a little time consuming. In terminal, navigate to where ever you saved this repo. In my case, I saved it in a directory named `dev` in my home directory.
  ```
- $ cd ~/tmp/packer-vagrant-arcgis
+ $ cd ~/dev/packer-vagrant-arcgis
  ```
  
  Now, go ahead and build the image. This _does_ require an internet connection, and the faster the better. You are going to be downloading a whole boatload of packages to ensure the operating system is up-to-date. 
