@@ -7,4 +7,4 @@ sudo su -c "/opt/arcgis/server/tools/authorizeSoftware -f /vagrant/resources/pro
 curl -X POST \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d 'username=admin&password=Esri380&f=json' \
-  "http://localhost:6080/arcgis/admin/createNewSite"
+  "http://$HOSTNAME:6080/arcgis/admin/createNewSite"

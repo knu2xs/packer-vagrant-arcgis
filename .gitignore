@@ -6,3 +6,4 @@ packer_cache
 builds
 *-virtualbox
 .idea
+**/*/log
