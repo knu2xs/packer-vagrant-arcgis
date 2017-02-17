@@ -28,10 +28,24 @@ $ brew cask install vagrant-manager
  ```
  $ cd ~/dev/packer-vagrant-arcgis
  ```
- 
  Now, go ahead and build the image. This _does_ require an internet connection, and the faster the better. You are going to be downloading a whole boatload of packages to ensure the operating system is up-to-date. 
 ```
-$ packer build ubuntu-16.04-amd64.json
+$ packer build ubuntu-16.04-amd64-arcgis-server-standalone.json
 ```
+Once this is done, and it admittedly takes a while, now we are almost ready to start using it with Vagrant. We have one more step before we have an instance to play with, though.  
 
-__This is as far as I have made it in building this process...__
+## Vagrant Box Add
+
+Nice work, we now have a box file to use. However, to use it we need to add it to Vagrant. The [`vagrant box add`](https://www.vagrantup.com/docs/cli/box.html#add) command will copy the box to our user profile, making it available for our various Vagrant projects. Think of it sort of like adding it to your Vagrant library.
+```
+$ vagrant box add arcgis-server-standalone file://<path to your created box file> 
+```
+In my case, I have everything in my user profile directory under the `dev` directory, so when I added my new box file, the command looked like this.
+```
+$ vagrant box add arcgis-server-standalone file://~/dev/packer-vagrant-arcgis/builds/ubuntu-16.04-arcgis-server-standalone.virtualbox.box
+```
+With this added, now we are ready to use Vagrant to build an instance to start playing with.
+
+## Vagrant Configurations
+
+__Under construction...__
