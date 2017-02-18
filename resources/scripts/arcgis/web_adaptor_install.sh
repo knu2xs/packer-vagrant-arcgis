@@ -2,7 +2,6 @@
 
 # Install Tomcat
 sudo apt-get install -y tomcat7 tomcat7-docs tomcat7-admin authbind
-sudo apt-get clean
 
 # stop the Tomcat service to make configuration changes
 sudo /etc/init.d/tomcat7 stop
@@ -49,3 +48,7 @@ tar -zxvf /tmp/ArcGIS_Web_Adaptor*.tar.gz -C /tmp
 
 # run the install
 sudo su -c "/tmp/WebAdaptor/Setup -m silent -l yes -d /opt/arcgis -v" arcgis
+
+# restart to ensure all changes committed...some weird stuff is going on when packer resets later in the build
+reboot;
+sleep 60;
