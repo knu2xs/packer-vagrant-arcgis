@@ -25,7 +25,7 @@ Next, __get the installation resources you need from Esri__. Put them in `resour
  
 ##Packer Build
  
-From here, things get a little easier. Still, this step is a little time consuming. In terminal, navigate to where ever you saved this repo. In my case, I saved it in a directory named `dev` in my home directory.
+From here, things get a little easier. Still, this step is a little time consuming. On my 2012 MacBook Pro, it took just under 33 minutes, so get comfortable. In terminal, navigate to where ever you saved this repo. In my case, I saved it in a directory named `dev` in my home directory.
 ```
 $ cd ~/dev/packer-vagrant-arcgis
 ```
