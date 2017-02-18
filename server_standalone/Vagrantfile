@@ -55,5 +55,6 @@ Vagrant.configure("2") do |config|
 
   # Enable provisioning with a shell script.
   config.vm.provision "shell", path: "../resources/scripts/arcgis/server_configure.sh"
+  config.vm.provision "shell", path: "../resources/scripts/arcgis/server_webadaptor_configure.sh"
 
 end
