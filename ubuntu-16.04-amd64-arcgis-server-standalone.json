@@ -90,16 +90,15 @@
       "type": "shell"
     },
     {
-      "script": "resources/scripts/arcgis/server_setup_prerequsites.sh",
-      "type": "shell"
-    },
-    {
       "destination": "/tmp/ArcGIS_Server_Linux.tar.gz",
       "source": "resources/proprietary/ArcGIS_Server_Linux.tar.gz",
       "type": "file"
     },
     {
-      "script": "resources/scripts/arcgis/server_install.sh",
+      "scripts": [
+        "resources/scripts/arcgis/server_setup_prerequsites.sh",
+        "resources/scripts/arcgis/server_install.sh" 
+      ],
       "type": "shell"
     },
     {
@@ -108,7 +107,10 @@
       "type": "file"
     },
     {
-      "script": "resources/scripts/arcgis/web_adaptor_install.sh",
+      "scripts": [
+        "resources/scripts/arcgis/web_adaptor_setup_prerequsites.sh",
+        "resources/scripts/arcgis/web_adaptor_install.sh"
+      ],
       "type": "shell"
     },
     {
